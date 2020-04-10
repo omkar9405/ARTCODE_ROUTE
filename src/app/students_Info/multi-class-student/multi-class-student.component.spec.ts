@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AllStudentsComponent } from './all-students.component';
+import { MultiClassStudentComponent } from './multi-class-student.component';
 
-describe('AllStudentsComponent', () => {
-  let component: AllStudentsComponent;
-  let fixture: ComponentFixture<AllStudentsComponent>;
+describe('MultiClassStudentComponent', () => {
+  let component: MultiClassStudentComponent;
+  let fixture: ComponentFixture<MultiClassStudentComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AllStudentsComponent ]
+      declarations: [ MultiClassStudentComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AllStudentsComponent);
+    fixture = TestBed.createComponent(MultiClassStudentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -205,7 +205,7 @@ h6 {
 .form-check input[type="checkbox"] {
   cursor: pointer;
   position: absolute;
-  width: 20px;
+  width: 15px;
   height: 20px;
   top: 1px;
   left: 12px;
@@ -1291,15 +1291,15 @@ h6 {
 =========================================================================*/
 /*=============== 5.1 Content ==================*/
 .breadcrumbs-area {
-  padding: 34px 0 35px;
+  padding: 0px 0 0px;
   position: relative;
   z-index: 1;
 }
 .breadcrumbs-area h3 {
-  font-weight: 500;
+  font-weight: 400;
   text-transform: capitalize;
   color: #111111;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 .breadcrumbs-area ul li {
   display: inline-block;
@@ -1391,11 +1391,11 @@ h6 {
   align-items: center;
   background-color: transparent;
   border: none;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 .heading-layout1 .item-title h3 {
   color: #111111;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 0;
 }
 .heading-layout1 .dropdown .dropdown-toggle {
@@ -1403,7 +1403,7 @@ h6 {
   font-size: 36px;
   display: inline-block;
   line-height: 1;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   position: relative;
   right: -10px;
 }

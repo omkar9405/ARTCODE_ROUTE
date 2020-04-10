@@ -8,25 +8,36 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 import { HomeComponent } from './dashboard/home/home.component';
-import { AllStudentsComponent } from './students/all-students/all-students.component';
-import { StudentsdetailsComponent } from './students/studentsdetails/studentsdetails.component';
-import { AdmissionformComponent } from './students/admissionform/admissionform.component';
-import { StudentpromotionComponent } from './students/studentpromotion/studentpromotion.component';
+
+import { StudentsdetailsComponent } from './students_Info/studentsdetails/studentsdetails.component';
+import { AdmissionformComponent } from './students_Info/admissionform/admissionform.component';
+
 import { ParentinfoComponent } from './dashboard/parentinfo/parentinfo.component';
 import { StudentinfoComponent } from './dashboard/studentinfo/studentinfo.component';
 import { TeacherinfoComponent } from './dashboard/teacherinfo/teacherinfo.component';
+import { OnlineAdmissionComponent } from './students_Info/online-admission/online-admission.component';
+import { DisabledStudentsComponent } from './students_Info/disabled-students/disabled-students.component';
+import { BulkDeleteComponent } from './students_Info/bulk-delete/bulk-delete.component';
+import { DisableReasonComponent } from './students_Info/disable-reason/disable-reason.component';
+import { MultiClassStudentComponent } from './students_Info/multi-class-student/multi-class-student.component';
+import { StudentCategoriesComponent } from './students_Info/student-categories/student-categories.component';
+import { StudentHouseComponent } from './students_Info/student-house/student-house.component';
+import { AddParentsComponent } from './parents_Info/add-parents/add-parents.component';
+import { ParentsdetailsComponent } from './parents_Info/parentsdetails/parentsdetails.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AllStudentsComponent,
     StudentsdetailsComponent,
     AdmissionformComponent,
-    StudentpromotionComponent,
     ParentinfoComponent,
     StudentinfoComponent,
     TeacherinfoComponent,
+    OnlineAdmissionComponent,
+    DisabledStudentsComponent,
+    AddParentsComponent,
+    ParentsdetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,13 +48,17 @@ import { TeacherinfoComponent } from './dashboard/teacherinfo/teacherinfo.compon
       [
         {path:'',redirectTo:'admin',pathMatch:'full'},
         {path:'admin',component:HomeComponent},
-        {path:'allstudent',component:AllStudentsComponent},
+        {path:'bulkdelete',component:BulkDeleteComponent},
         {path:'admissionform',component:AdmissionformComponent},
-        {path:'studentpromotion',component:StudentpromotionComponent},
+        {path:'disablereason',component:DisableReasonComponent},
+        {path:'disabledstudent',component:DisabledStudentsComponent},
+        {path:'multiclassstudent',component:MultiClassStudentComponent},
+        {path:'onlineadmission',component:OnlineAdmissionComponent},
+        {path:'studentcategories',component:StudentCategoriesComponent},
+        {path:'studenthouse',component:StudentHouseComponent},
         {path:'studentdetails',component:StudentsdetailsComponent},
-        {path:'parentinfo',component:ParentinfoComponent},
-        {path:'studentinfo',component:StudentinfoComponent},
-        {path:'teacherinfo',component:TeacherinfoComponent},
+        {path:'parentsdetails',component:ParentsdetailsComponent},
+        {path:'addparents',component:AddParentsComponent},
       ],{useHash:true}
     )
   ],
