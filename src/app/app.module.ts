@@ -9,11 +9,8 @@ import { FormsModule } from '@angular/forms';
 
 import { HomeComponent } from './dashboard/home/home.component';
 
-import { StudentsdetailsComponent } from './students_Info/studentsdetails/studentsdetails.component';
-import { AdmissionformComponent } from './students_Info/admissionform/admissionform.component';
-
 import { ParentinfoComponent } from './dashboard/parentinfo/parentinfo.component';
-import { StudentinfoComponent } from './dashboard/studentinfo/studentinfo.component';
+
 import { TeacherinfoComponent } from './dashboard/teacherinfo/teacherinfo.component';
 import { OnlineAdmissionComponent } from './students_Info/online-admission/online-admission.component';
 import { DisabledStudentsComponent } from './students_Info/disabled-students/disabled-students.component';
@@ -29,13 +26,11 @@ import { ParentsdetailsComponent } from './parents_Info/parentsdetails/parentsde
   declarations: [
     AppComponent,
     HomeComponent,
-    StudentsdetailsComponent,
-    AdmissionformComponent,
+   
     ParentinfoComponent,
-    StudentinfoComponent,
+  
     TeacherinfoComponent,
-    OnlineAdmissionComponent,
-    DisabledStudentsComponent,
+  
     AddParentsComponent,
     ParentsdetailsComponent,
   ],
@@ -48,15 +43,6 @@ import { ParentsdetailsComponent } from './parents_Info/parentsdetails/parentsde
       [
         {path:'',redirectTo:'admin',pathMatch:'full'},
         {path:'admin',component:HomeComponent},
-        {path:'bulkdelete',component:BulkDeleteComponent},
-        {path:'admissionform',component:AdmissionformComponent},
-        {path:'disablereason',component:DisableReasonComponent},
-        {path:'disabledstudent',component:DisabledStudentsComponent},
-        {path:'multiclassstudent',component:MultiClassStudentComponent},
-        {path:'onlineadmission',component:OnlineAdmissionComponent},
-        {path:'studentcategories',component:StudentCategoriesComponent},
-        {path:'studenthouse',component:StudentHouseComponent},
-        {path:'studentdetails',component:StudentsdetailsComponent},
         {path:'parentsdetails',component:ParentsdetailsComponent},
         {path:'addparents',component:AddParentsComponent},
       ],{useHash:true}
